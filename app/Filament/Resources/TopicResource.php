@@ -34,7 +34,7 @@ class TopicResource extends Resource
                     ->required(),
                 Forms\Components\FileUpload::make('icon')
                     ->disk(config('filesystems.default'))
-                    ->directory('topik')
+                    ->directory('public/topik')
                     ->visibility('public')
                     ->image(),
                 Forms\Components\Textarea::make('description')
